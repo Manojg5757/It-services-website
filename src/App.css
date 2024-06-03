@@ -601,8 +601,11 @@ padding-left: 10px;
 
 .services-left{
     margin-bottom: 10px;
+    width: 70%;
 }
-
+.services-right{
+    width: 70%;
+}
 /* testimonial styling */
 
 .card-container{
