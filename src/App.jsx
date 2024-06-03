@@ -1,18 +1,23 @@
 import React from 'react'
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import ABout from './components/about/ABout'
-import Services from './components/services/Services'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import Testimonial from './components/Testimonial'
+import About from './components/About'
+import Special from './components/Special'
+import './App.css'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Hero />
+      <About />
       <Services />
-      <ABout />
+      <Special />
+      <Testimonial />
       <Contact />
       <Footer />
     </div>

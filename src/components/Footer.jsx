@@ -1,5 +1,4 @@
-import React from "react";
-import "./footer.css";
+import React, { useEffect, useState } from "react";
 import { TiSocialInstagram } from "react-icons/ti";
 import { FiLinkedin } from "react-icons/fi";
 import { FaYoutube } from "react-icons/fa";
@@ -9,6 +8,19 @@ import { FaArrowAltCircleUp } from "react-icons/fa";
 
 
 const Footer = () => {
+  const[isArrow,setIsArrow] = useState(false)
+  useEffect(()=>{
+    const windowHeight = ()=>{
+      if(window.scrollY > 600){
+         setIsArrow(true)
+         console.log("reached height")
+      }else{
+        setIsArrow(false)
+      }
+    } 
+
+    window.addEventListener('scroll',windowHeight)
+  },[])
   return (
     <footer className="footer">
       <div className="footer-left">
@@ -35,7 +47,7 @@ const Footer = () => {
         <p><FaXTwitter />Twitter</p>
       </div>
       <p className="copyright"><FaCopyright />All Rights Reserved</p>
-      <a href="#" className="arrow"><FaArrowAltCircleUp /></a>
+      <a href="#" className={`arrow ${isArrow ? 'show' : ''}`}><FaArrowAltCircleUp /></a>
     </footer>
   );
 };
