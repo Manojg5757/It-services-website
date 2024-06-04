@@ -11,7 +11,7 @@ const Special = () => {
   return (
     <div className='special'>
         <div className="special-top">
-            <h1>Here's why you'll love it Jobstack</h1>
+            <h1>Here's why you'll love it with IT Ground</h1>
             <p>Best services in the Indesutry with professional level output that drive success towards you</p>
         </div>
         <div className="special-bottom">

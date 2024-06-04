@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
+  const [details,setDetails] = useState({
+    name:'',
+    email:'',
+    mobile:''
+  })
   return (
     <div className='container-form' id='contact-section'>
         <h1>Contact Us</h1>
-        <form className='contact' action="">
+        <form className='contact' >
             <div className='form-inside'>
             <label htmlFor="name">Name</label>
             <input name='name' type="text" placeholder='name' />

@@ -1,0 +1,91 @@
+.about-company{
+    color: white;
+    background: #0f0f0f;
+    margin-top: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.insights{
+    display: flex;
+    height: 50%;
+    
+}
+
+.projects,.lead{
+    width: 50%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.projects h2,.lead h2{
+    font-size: 32px;
+    color: #EEEEEE;
+}
+
+.projects p span{
+    color: #DC5F00;
+}
+
+
+.lead p span{
+    color: #DC5F00;
+}
+
+.goals{
+    height: 50%;
+    background: url('https://images.pexels.com/photos/7666429/pexels-photo-7666429.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.mission,.vision{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.mission h1,.vision h1{
+    color: #373A40;
+}
+
+.mission h1 span,.vision h1 span{
+    border-bottom: 2px solid #373A40;
+}
+
+.mission p,.vision p{
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width:576px) {
+    .about-company{
+        height: auto;
+    }
+    .insights{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .goals{
+        flex-direction: column;
+    }
+    .projects,.lead{
+        width: 100%;
+    }
+}
